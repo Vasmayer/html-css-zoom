@@ -12,6 +12,7 @@
     width: 100%;
     margin: auto;
     background-color:black;
+    
 }
 
 .main-container
@@ -26,8 +27,9 @@
     justify-content: center;
     overflow-y: auto;
 
+
     /* da toglire */
-    background-color: brown;
+    background-color: balck;
 }
 /***** HEARDER *****/
 
@@ -68,11 +70,28 @@ hearder a{
 
 .main-container .zoomer
 {
-    width: calc((100% / 7) - 10px);
+    width: 250px;
     margin: 5px 5px;
     height: 150px ;
-    background-color: turquoise;
-   
+    position: relative;
+    background-image: linear-gradient(rgba(128, 128, 128, 0.3),rgba(128, 128, 128, 0.3)),url("https://picsum.photos/id/237/200/300");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+
+}
+.zoomer .mute
+{
+    position: absolute;
+    color: white;
+    left:0;
+    bottom:0;
+    background-color: rgba(128, 128, 128, 0.6);
+    padding: 5px 10px;
+}
+.zoomer .mute:after
+{
+    content: " Pinco Pallo";
 }
 
 /***** FOOTER *****/
