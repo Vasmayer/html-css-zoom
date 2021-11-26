@@ -6,8 +6,69 @@
     font-family: 'Lato', sans-serif;
 }
 
+/***** CONTAINERS *****/
 .container
 {
-    width: 1200px;
+    width: 100%;
     margin: auto;
+    background-color:black;
+}
+
+.main-container
+{
+    width: 80vw;
+    height: calc(80vh - 30px);
+    margin: auto;
+    margin-bottom: 30px;
+
+    /* da toglire */
+    background-color: brown;
+}
+/***** HEARDER *****/
+
+/* topbar */
+
+.topbar
+{
+    width: 100vw;
+    height: 8vh;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 30px;
+
+    /* da toglire */
+    background-color:black;
+}
+.speaker-view::before
+{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f00a";
+    color: white;
+    padding-right: 5px;
+}
+hearder a{
+
+    text-decoration: none;
+    color: white;
+    background-color: #4a4a4a;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 0 5px;
+}
+
+/***** FOOTER *****/
+
+/* bottombar */
+.bottombar
+{
+    width: 100vw;
+    height: 12vh;
+    margin: auto;
+
+    /* da toglire */
+    background-color:#222222;
 }
